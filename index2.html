@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Краля 3джс</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+            background-color: #111116;
+        }
+
+        canvas {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .infopanel {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            background: rgba(0, 0, 0, 0.65);
+            padding: 14px 20px;
+            border-radius: 8px;
+            pointer-events: none;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .infopanel h1 {
+            font-size: 16px;
+            margin-bottom: 6px;
+        }
+
+        .infopanel p {
+            font-size: 12px;
+            color: #aaaaaa;
+        }
+    </style>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="infopanel">
+        <h1>Краля. Предметы с того лендоса</h1>
+        <p>Вращение: левая кнопка мыши | Перемещение: правая кнопка мыши | Зум: колесиком</p>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
